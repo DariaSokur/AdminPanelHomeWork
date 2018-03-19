@@ -1,0 +1,10 @@
+<label>Header of article:
+  <input id="header" [(ngModel)]="header" placeholder="Header">
+</label>
+<label>User ID:
+  <input id="userId" [(ngModel)]="userId" placeholder="UserID">
+</label>
+<label>Body of article:
+  <textarea id="body" [(ngModel)]="body" placeholder="Body of Article"></textarea>
+</label>
+<button (click)="addNewArticle(header, userId, body)" routerLink="/articles">Save</button>

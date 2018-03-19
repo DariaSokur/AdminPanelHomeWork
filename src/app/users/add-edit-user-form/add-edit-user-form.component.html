@@ -1,0 +1,7 @@
+<label>Name:
+  <input id="name" [(ngModel)]="name" placeholder="Name">
+</label>
+<label>Surname:
+  <input id="surname" [(ngModel)]="surname" placeholder="Surname">
+</label>
+<button (click)="addNewUser(name, surname)" routerLink="/users">Save</button>

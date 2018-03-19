@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let article of articles"
+      routerLink="/articles/{{article.id}}">
+    {{article.header}} - {{article.userId | userIdToUserName}}
+    <button routerLink="/edit_article">Edit</button>
+  </li>
+</ul>
+<button routerLink="/add_new_article">Add new article</button>
